@@ -118,6 +118,24 @@ IPv4 Ubuntu 對外連線
 						
 <section data-markdown>
     <script type="text/template">
+## Week15
+
+FileZilla 虛擬主機文件共享設定
+1.下載FileZilla，解縮到隨身系統中
+2.啟動Ubuntu主機，確認虛擬主機的整體系統埠號並開啟putty
+3.設定預連接IP為個人主機IP，在設定SSH中的X11，將Enable X11 fowarding打勾並在X display location中輸入localhost:0.0
+4.存儲後開啟，並輸入帳密kmol2020
+5.開啟FileZilla，點選檔案->站台管理員->新增站台個人主機IP
+6.協定改為 SFTP-SSH，主機輸入個人主機IP及連接埠輸入22
+7.將登入型式改為詢問密碼、使用者命名為kmol2020
+8.設定完成後，點選連線，密碼輸入kmol2020，即完成文件共享
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
 # 投影片快捷鍵
 
 * 利用箭頭上下前後換頁
