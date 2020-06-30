@@ -103,6 +103,21 @@ IPv4 Ubuntu 對外連線
 						
 <section data-markdown>
     <script type="text/template">
+## Week14
+
+##IPv6遠端控制設定
+1.點選IPv6內容，IPv6位址輸入2001:288:6004:17:2020:2::7225(2是乙班、7225為乙班25號)
+2.5.啟動Ubuntu輸入密碼kmol2020，並開啟LXTermial進入cd2020pj1
+3.輸入vi wsgi.py，將host改為個人主機IP(按i編輯，按Esc輸入:wq存儲)
+4.在另一台主機開啟putty，輸入預連線主機IP，設定SSH下的X11(Enable X11 fowarding打勾並在X display location中輸入localhost:0.0)
+5.進入tmp/cd2020pj1/docs/cmsimde，輸入python3 wsgi.py開啟遠端，網址為[該主機IP]:17443(必須關閉proxy)
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
 # 投影片快捷鍵
 
 * 利用箭頭上下前後換頁
